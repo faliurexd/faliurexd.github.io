@@ -73,6 +73,7 @@ let waveTime = 0;
 
 function drawWaves() {
     waveCtx.clearRect(0, 0, waveCanvas.width, waveCanvas.height);
+    const isLight = document.body.classList.contains('light-mode');
 
     for (let w = 0; w < 3; w++) {
         waveCtx.beginPath();
@@ -90,8 +91,13 @@ function drawWaves() {
         waveCtx.closePath();
 
         const gradient = waveCtx.createLinearGradient(0, waveCanvas.height - 150, 0, waveCanvas.height);
-        gradient.addColorStop(0, `rgba(255, 255, 255, ${0.05 - w * 0.01})`);
-        gradient.addColorStop(1, `rgba(0, 240, 255, ${0.1 - w * 0.02})`);
+        if (isLight) {
+            gradient.addColorStop(0, `rgba(0, 0, 0, ${0.3 - w * 0.05})`);
+            gradient.addColorStop(1, `rgba(0, 0, 0, ${0.5 - w * 0.1})`);
+        } else {
+            gradient.addColorStop(0, `rgba(255, 255, 255, ${0.05 - w * 0.01})`);
+            gradient.addColorStop(1, `rgba(0, 240, 255, ${0.1 - w * 0.02})`);
+        }
         waveCtx.fillStyle = gradient;
         waveCtx.fill();
     }
