@@ -127,21 +127,6 @@ window.addEventListener('resize', () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-// GitHub Stats Animation
-function animateCounter(elementId, target) {
-    const element = document.getElementById(elementId);
-    let current = 0;
-    const increment = Math.ceil(target / 50);
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            current = target;
-            clearInterval(timer);
-        }
-        element.textContent = current;
-    }, 30);
-}
-
 // Intersection Observer for scroll animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -158,17 +143,6 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'all 0.8s ease';
     observer.observe(section);
 });
-
-// Start counters when about section is visible
-const aboutSection = document.getElementById('about');
-const aboutObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        animateCounter('repos-count', 42);
-        animateCounter('stars-count', 128);
-        aboutObserver.disconnect();
-    }
-});
-aboutObserver.observe(aboutSection);
 
 // Parallax effect on mouse move
 document.addEventListener('mousemove', (e) => {
