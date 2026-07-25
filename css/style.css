@@ -77,10 +77,11 @@ header {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
-    background: linear-gradient(135deg, #b400ff, #00ff88);
+    background: linear-gradient(135deg, #b400ff, #00f0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 10px #b400ff) drop-shadow(0 0 20px #00f0ff);
     animation: flicker 3s infinite;
 }
 
@@ -97,7 +98,7 @@ header {
 .glitch::before {
     animation: glitch-1 2s infinite linear alternate-reverse;
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-    background: linear-gradient(135deg, #ff00d4, #00ff88);
+    background: linear-gradient(135deg, #ff00d4, #00f0ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -532,10 +533,11 @@ body.light-mode {
 }
 
 body.light-mode .glitch {
-    background: linear-gradient(135deg, #b400ff, #00ff88) !important;
+    background: linear-gradient(135deg, #b400ff, #00f0ff) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
+    filter: drop-shadow(0 0 10px #b400ff) drop-shadow(0 0 20px #00f0ff) !important;
 }
 
 body.light-mode .subtitle {
