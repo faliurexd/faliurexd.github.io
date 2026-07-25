@@ -1,4 +1,4 @@
-# faliurexd | GitHub Profile
+# wen | GitHub Profile
 
 A futuristic, hacker-inspired personal website showcasing my journey as a developer.
 
