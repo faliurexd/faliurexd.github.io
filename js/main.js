@@ -172,18 +172,31 @@ const themeToggle = document.getElementById('theme-toggle');
 const sunIcon = document.getElementById('sun-icon');
 const moonIcon = document.getElementById('moon-icon');
 
+function updateSceneColors(isLight) {
+    const planetColor = isLight ? 0x000000 : 0xffffff;
+    const starColor = isLight ? 0x000000 : 0xffffff;
+    
+    planets.forEach(planet => {
+        planet.material.color.setHex(planetColor);
+    });
+    
+    starsMaterial.color.setHex(starColor);
+}
+
 // Check for saved theme preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
     sunIcon.style.display = 'none';
     moonIcon.style.display = 'block';
+    updateSceneColors(true);
 }
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
     
-    if (document.body.classList.contains('light-mode')) {
+    if (isLight) {
         sunIcon.style.display = 'none';
         moonIcon.style.display = 'block';
         localStorage.setItem('theme', 'light');
@@ -192,4 +205,6 @@ themeToggle.addEventListener('click', () => {
         moonIcon.style.display = 'none';
         localStorage.setItem('theme', 'dark');
     }
+    
+    updateSceneColors(isLight);
 });

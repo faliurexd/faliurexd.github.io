@@ -519,139 +519,147 @@ footer a:hover {
 
 /* Light Mode */
 body.light-mode {
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
 }
 
 body.light-mode .glitch {
-    color: #000;
-    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 40px #000;
+    color: #fff !important;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff !important;
 }
 
 body.light-mode .subtitle {
-    color: #0066ff;
-    text-shadow: 0 0 10px #0066ff;
+    color: #0066ff !important;
+    text-shadow: 0 0 10px #0066ff !important;
 }
 
 body.light-mode section {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
 body.light-mode section::before {
-    background: linear-gradient(90deg, transparent, #000, transparent);
+    background: linear-gradient(90deg, transparent, #000, transparent) !important;
 }
 
 body.light-mode h2 {
-    color: #000;
-    text-shadow: none;
+    color: #000 !important;
+    text-shadow: none !important;
 }
 
 body.light-mode h2::before {
-    color: #666;
+    color: #666 !important;
 }
 
 body.light-mode .intro-text {
-    color: #333;
+    color: #333 !important;
 }
 
 body.light-mode .intro-text span {
-    color: #0066ff;
+    color: #0066ff !important;
 }
 
 body.light-mode .skill-card {
-    background: rgba(0, 102, 255, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 102, 255, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
 body.light-mode .skill-card:hover {
-    border-color: #000;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-color: #000 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
 }
 
 body.light-mode .skill-card h3 {
-    color: #6600cc;
+    color: #6600cc !important;
 }
 
 body.light-mode .skill-card p {
-    color: #333;
+    color: #333 !important;
 }
 
 body.light-mode .project-card {
-    background: linear-gradient(135deg, rgba(102, 0, 204, 0.1), rgba(0, 102, 255, 0.1));
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(102, 0, 204, 0.1), rgba(0, 102, 255, 0.1)) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
 body.light-mode .project-card:hover {
-    border-color: #000;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border-color: #000 !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2) !important;
 }
 
 body.light-mode .project-card h3 {
-    color: #000;
+    color: #000 !important;
 }
 
 body.light-mode .project-card p {
-    color: #333;
+    color: #333 !important;
 }
 
 body.light-mode .tech-tag {
-    background: rgba(0, 102, 255, 0.2);
-    color: #0066ff;
-    border: 1px solid rgba(0, 102, 255, 0.4);
+    background: rgba(0, 102, 255, 0.2) !important;
+    color: #0066ff !important;
+    border: 1px solid rgba(0, 102, 255, 0.4) !important;
 }
 
 body.light-mode .code-block {
-    background: #f5f5f5;
-    border: 1px solid #ccc;
+    background: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
 }
 
 body.light-mode .code-block::before {
-    background: #f5f5f5;
-    color: #6600cc;
+    background: #f5f5f5 !important;
+    color: #6600cc !important;
 }
 
-body.light-mode .code-comment { color: #666; }
-body.light-mode .code-keyword { color: #6600cc; }
-body.light-mode .code-string { color: #009900; }
-body.light-mode .code-function { color: #0066ff; }
+body.light-mode .code-comment { color: #666 !important; }
+body.light-mode .code-keyword { color: #6600cc !important; }
+body.light-mode .code-string { color: #009900 !important; }
+body.light-mode .code-function { color: #0066ff !important; }
 
 body.light-mode .terminal-cursor {
-    background: #000;
+    background: #000 !important;
 }
 
 body.light-mode .vibecoding {
-    border-left-color: #6600cc;
+    border-left-color: #6600cc !important;
 }
 
 body.light-mode .vibecoding h3 {
-    color: #6600cc;
+    color: #6600cc !important;
 }
 
 body.light-mode .vibecoding p {
-    color: #333;
+    color: #333 !important;
 }
 
 body.light-mode footer {
-    color: #666;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #666 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 body.light-mode footer a {
-    color: #0066ff;
+    color: #0066ff !important;
 }
 
 body.light-mode footer a:hover {
-    color: #6600cc;
+    color: #6600cc !important;
 }
 
 body.light-mode .theme-toggle {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    color: #000;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    color: #000 !important;
 }
 
 body.light-mode .theme-toggle:hover {
-    border-color: #000;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-color: #000 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.light-mode .glitch::before {
+    color: #ff00d4 !important;
+}
+
+body.light-mode .glitch::after {
+    color: #b400ff !important;
 }
